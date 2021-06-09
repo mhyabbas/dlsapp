@@ -113,6 +113,7 @@ select {
 
 input[type=time] {
 	padding: 13px 15px 14px;
+	-webkit-appearance: none;
 }
 
 input:focus, textarea:focus, select:focus, button:focus {
