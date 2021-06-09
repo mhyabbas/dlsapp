@@ -315,6 +315,7 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	height: auto;
 }
 
 .nav__list--sub-list {
@@ -796,6 +797,7 @@
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
 		        flex-direction: row;
+		height: 100%;
 	}
 
 	.nav__item--account .nav__link:hover .nav__name {
