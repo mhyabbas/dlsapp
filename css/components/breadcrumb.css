@@ -1,0 +1,23 @@
+.breadcrumb__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.breadcrumb__item + .breadcrumb__item:before {
+    content: ' ';
+    background: url('../../assets/icon-arrow-right.svg') no-repeat center center/10px 14px;
+    width: 10px;
+    height: 14px;
+    padding: 0 12px;
+}
+
+.main-wrapper .breadcrumb__list {
+    padding: 0;
+}

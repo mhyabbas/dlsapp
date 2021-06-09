@@ -1,0 +1,52 @@
+.tag {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 5px 15px;
+	background-color: #005393;
+	border-radius: 12px;
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.tag--small {
+	padding: 3px 10px;
+	border-radius: 10px;
+}
+
+.tag--blue {
+	background-color: #0091FF;
+}
+
+.tag--orange {
+	background-color: #FA6400;
+}
+
+.tag--red {
+	background-color: #E02020;
+}
+
+.tag--green {
+	background-color: #00C330;
+}
+
+.tag--grey {
+	background-color: #7C7C7C;
+}
+
+.tag--icon svg {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	margin-right: 5px;
+	width: 15px;
+	height: 15px;
+	fill: white;
+}

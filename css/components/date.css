@@ -1,0 +1,39 @@
+.date {
+	font-size: 24px;
+}
+
+.date__time {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	line-height: 1.1;
+}
+
+.date__card {
+	display: inline-block;
+	margin-right: 15px;
+	padding: 6px 18px;
+	background-color: #0091FF;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+	        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+	color: white;
+	text-align: center;
+}
+
+.date__day {
+	display: block;
+}
+
+.date__month {
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.date strong {
+	font-weight: 600;
+}

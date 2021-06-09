@@ -1,0 +1,46 @@
+.table {
+	border-radius: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+.table th {
+    background-color: #005598;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+.table th:hover {
+    background-color: #003a6a;
+    text-decoration: underline;
+}
+
+.table th svg {
+	margin-left: 10px;
+	width: 14px;
+	height: 14px;
+	fill: white;
+}
+
+.table tr {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.table tr:hover {
+	background-color: #f0f9ff;
+}
+
+.table th, .table td {
+    padding: 20px 30px;
+}

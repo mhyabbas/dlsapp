@@ -1,0 +1,66 @@
+.btn {
+	position: relative;
+	vertical-align: middle;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 10px;
+    padding: 10px 40px;
+	background-color: #0091FF;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn--outline, input[type="submit"].btn--outline {
+	background: none;
+	border-color: #0091FF;
+	color: #3999FF;
+}
+
+.btn--small {
+	padding: 5px 20px;
+}
+
+.btn--full-width {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+}
+
+.btn--grey {
+	background-color: #7C7C7C;
+	color: white;
+}
+
+.btn--white {
+	background-color: white;
+	color: #0091FF;
+}
+
+.btn--icon svg {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	fill: white;
+}
+
+button,
+input[type="submit"] {
+	-webkit-appearance: none;
+}

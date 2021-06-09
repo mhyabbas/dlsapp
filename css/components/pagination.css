@@ -1,0 +1,39 @@
+.pagination {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.pagination__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+}
+
+.pagination__item {
+	font-size: 18px;
+}
+
+.pagination__link {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.pagination__link:hover {
+	text-decoration: underline;
+}
+
+.pagination__link svg {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	width: 40px;
+	height: 40px;
+	fill: #0091FF;
+}

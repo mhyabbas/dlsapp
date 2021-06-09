@@ -1,0 +1,45 @@
+.media {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.media svg {
+	margin-right: 15px;
+	width: 24px;
+	height: 24px;
+	fill: #7C7C7C;
+}
+
+.media img {
+	margin-right: 15px;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	border: 1px solid #E0E0E0;
+}
+
+.media__icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-right: 15px;
+	width: 40px;
+	height: 40px;
+	background-color: #0091FF;
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.media__body {
+	padding-right: 20px;
+}
