@@ -113,6 +113,7 @@ select {
 
 input[type=time] {
 	padding: 13px 15px 14px;
+	min-height: 52px;
 	-webkit-appearance: none;
 }
 
