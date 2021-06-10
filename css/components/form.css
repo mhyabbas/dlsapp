@@ -504,14 +504,19 @@ fieldset {
 }
 
 /*File field*/
-.file-up__label {
-	margin-bottom: 0;
+.form__file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
-.file-up__label__text {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+.form__file + label {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -521,37 +526,31 @@ fieldset {
 	border-radius: 5px;
 	color: #3999FF;
 	font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+	overflow: hidden;
 }
 
-.file-up__label__text svg {
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
-	margin-right: 10px;
-	width: 24px;
-	height: 24px;
-	fill: #0091FF;
+.form__file:focus + label,
+.form__file.has-focus + label {
+    box-shadow: 0 0 0 1px #2296D3;
 }
 
-.file-up [type="file"]:focus + span {
-	box-shadow: 0 0 0 1px #2296D3;
-}
-
-.file-up__output {
-	padding: 15px;
-	border: none;
-	vertical-align: middle;
-	font-size: 16px;
+.form__file + label svg {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    fill: #0091FF;
 }
 
 /*Errors*/
-.form__field.error > label,
-.form__field.error .file-up__label__text
-{
+.form__field.error > label {
 	color: #c00;
 }
 
-.form__field.error .file-up__label__text svg {
+.form__field.error .form__file ~ label svg {
 	fill: #c00;
 }
 
@@ -562,7 +561,7 @@ fieldset {
 .form__field.error input[type=radio],
 .form__field.error textarea,
 .form__field.error .choices__inner,
-.form__field.error .file-up__label__text,
+.form__field.error .form__file ~ label,
 .form__checkbox-group.error .form__checkbox-mark
 {
 	border-color: #c00 !important;

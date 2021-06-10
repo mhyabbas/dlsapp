@@ -69,8 +69,31 @@ function timeField(target) {
 
 function fileField(target) {
     target.forEach(el => {
-        let a11yFUP = new A11yFileUpload();
-        a11yFUP.init(el);
+        let label = el.nextElementSibling;
+        let labelVal = label.innerHTML;
+
+        el.addEventListener('change', function(e) {
+            let fileName = "";
+            if (this.files && this.files.length > 1) {
+                fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+            } else {
+                fileName = e.target.value.split( '\\' ).pop();
+
+                if (fileName.length > 15) {
+                    fileName = fileName.substr(0, 6) + '&hellip;' + fileName.substr(-7);
+                }
+            }
+
+            if (fileName) {
+                label.querySelector('span').innerHTML = fileName;
+            } else {
+                label.innerHTML = labelVal;
+            }
+        });
+
+        // Firefox bug fix
+        el.addEventListener('focus', function() { el.classList.add('has-focus'); });
+        el.addEventListener('blur', function() { el.classList.remove('has-focus'); });
     });
 }
 

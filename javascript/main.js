@@ -39,7 +39,7 @@ function loadJS() {
 		}
 
 		// File field
-		var file = document.querySelectorAll("[data-file-input]");
+		var file = document.querySelectorAll(".form__file");
 		if (file != null) {
 			fileField(file);
 		}
