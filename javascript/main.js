@@ -2,6 +2,7 @@ import {createTopNav,createTabbedNav} from './components/navigation.js';
 import {dateField,dropdownField,dropdownMultiField,timeField,fileField,checkError,checkErrorRadio,checkErrorCheckbox,checkErrorDropdown,checkErrorDropdownMulti} from './components/form.js';
 import {createCTA} from './components/cta.js';
 import {searchTable} from './components/tables.js';
+import {createRating} from './components/rating.js';
 
 function loadJS() {
 	setTimeout(function(){
@@ -78,6 +79,12 @@ function loadJS() {
 		var errorDropdownMulti = document.querySelectorAll(".form__dropdown-multi");
 		if (errorDropdownMulti != null) {
 			checkErrorDropdownMulti(errorDropdownMulti);
+		}
+
+		// Rating
+		var rating = document.querySelectorAll(".rating");
+		if (rating != null) {
+			createRating(rating);
 		}
 
 	}, 50);

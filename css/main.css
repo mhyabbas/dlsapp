@@ -8,7 +8,6 @@
 */
 @import url('plugins/datepicker.min.css');
 @import url('plugins/choices.min.css');
-@import url('plugins/file-upload.css');
 
 /*
 @import(components/xx.css)
@@ -24,6 +23,7 @@
 @import url('components/card.css');
 @import url('components/form.css');
 @import url('components/tables.css');
+@import url('components/rating.css');
 @import url('components/footer.css');
 
 @import url('print.css') print;
