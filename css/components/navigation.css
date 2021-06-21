@@ -664,6 +664,7 @@
 	}
 
 	.nav__logo img {
+		-ms-flex: 0 0 auto;
 		margin-right: 10px;
 	}
 
